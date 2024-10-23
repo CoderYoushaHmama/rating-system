@@ -1,0 +1,275 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: system-ui;
+}
+
+body{
+     /* background-image: url(../IMAGES/services-background.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     background-blend-mode: soft-light; */
+}
+
+.title{
+     text-align: center;
+     margin-top: 2%;
+}
+
+form{
+     width: 40%;
+     float: right;
+     margin-right: 5%;
+     margin-top: 3%;
+     background-color: whitesmoke;
+     border-radius: 8px;
+     box-shadow: 0px 1px 10px;
+}
+
+form .inputs-container div{
+     font-size: 20px;
+     font-weight: 700;
+     margin-top: 1%;
+     margin-left: 15%;
+}
+
+form .inputs-container input, form .inputs-container select{
+     width: 70%;
+     height: 40px;
+     border-radius: 8px;
+     border: none;
+     margin-top: 1%;
+     margin-left: 15%;
+     font-size: 20px;
+     background-color: gainsboro;
+}
+
+form .inputs-container .image-input-container{
+     position: relative;
+     width: 60px;
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: pink;
+     border-radius: 50%;
+     margin-top: 5%;
+     float: left;
+}
+
+form .inputs-container .images-container{
+     max-width: 50%;
+     min-width: 50%;
+     height: 100px;
+     overflow-x: scroll;
+     overflow-y: hidden;
+     float: right;
+     margin-top: 5%;
+     display: flex;
+}
+
+form .inputs-container .images-container::-webkit-scrollbar{
+     display: block;
+     background-color: white;
+     border-radius: 8px;
+     width: 15px;
+}
+
+form .inputs-container .images-container::-webkit-scrollbar-thumb{
+     background-color: cyan;
+     border-radius: 8px;
+}
+
+form .inputs-container .images-container img{
+     width: 70px;
+     height: 70px;
+     position: absolute;
+}
+
+form .inputs-container .images-container .image-wrapper{
+     position: relative;
+     width: 100px !important;
+     height: 50px;
+}
+
+form .inputs-container .image-input-container img{
+     width: 50px;
+     height: 50px;
+     margin-left: 2%;
+     float: left;
+}
+
+form .inputs-container .images-container .remove-btn{
+     position: absolute;
+     top: 1%;
+     left: 0%;
+     background-color: red;
+     border: none;
+     color: white;
+     outline: none;
+}
+
+form .inputs-container .image-input-container input{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     opacity: 0;
+}
+
+form .buttons-container{
+     width: 80%;
+     margin-right: 10%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+form .buttons-container .create-btn{
+     margin-top: 5%;
+     width: 50%;
+     height: 40px;
+     margin-left: 35%;
+     cursor: pointer;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 8px;
+     font-size: 20px;
+     transition: 0.5s;
+}
+
+form .buttons-container .create-btn:hover{
+     background: none;
+     background-color: black;
+     color: white;
+}
+
+form .buttons-container a{
+     margin-top: 5%;
+     width: 30%;
+     height: 40px;
+     margin-left: 35%;
+     margin-bottom: 4%;
+     cursor: pointer;
+     background-color: red;
+     border: none;
+     border-radius: 8px;
+     font-size: 20px;
+     transition: 0.5s;
+     text-decoration: none;
+     color: white;
+     line-height: 40px;
+     text-align: center;
+}
+
+form .buttons-container a:hover{
+     border: 1px solid red;
+     background: none;
+     color: red;
+}
+
+.images-section{
+     width: 70px;
+     height: 400px;
+     float: right;
+     margin-right: 20%;
+     margin-top: 5%;
+     overflow-y: scroll;
+}
+
+.images-section::-webkit-scrollbar{
+     display: none;
+}
+
+.images-section .image-container{
+     width: 100%;
+     height: 80px;
+     position: relative;
+}
+
+.images-section .image-container img{
+     width: 100%;
+     height: 70px;
+}
+
+.images-section .image-container a{
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     top: 0;
+     right: 0;
+}
+
+.images-section .image-container a img{
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     top: 0;
+     right: 0;
+}
+
+.back-btn{
+     position: absolute;
+     top: 1%;
+     left: 1%;
+     width: 50px;
+     height: 50px;
+}
+
+.back-btn img{
+     width: 100%;
+     height: 100%;
+}
+
+.image-separator{
+     padding: 50px;
+}
+
+@media only screen and (width <540px){
+     body{
+          /* background-position: 80%; */
+     }
+
+     form{
+          width: 50%;
+          float: right;
+          margin-left: 10%;
+          margin-top: 20%;
+          background: none;
+          box-shadow: none;
+     }
+
+     .images-section{
+          margin-right: 5%;
+          margin-top: 20%;
+     }
+
+     form .buttons-container{
+          width: 60%;
+          margin-left: 25%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     form .inputs-container input, form .inputs-container select{
+          width: 90%;
+     }
+
+     form .buttons-container .create-btn, form .buttons-container a{
+          margin-top: 20%;
+          width: 90%;
+     }
+
+     form .inputs-container .images-container{
+          max-width: 70%;
+          min-width: 70%;
+     }
+
+     form .inputs-container .images-container .image-wrapper{
+          width: 100px;
+          height: 80px;
+     }
+}

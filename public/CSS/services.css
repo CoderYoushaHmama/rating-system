@@ -1,0 +1,249 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: system-ui;
+}
+
+body{
+     height: 100vh;
+}
+
+.success{
+     position: absolute;
+     padding: 1%;
+     top: 1%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 30%;
+     height: 30px;
+     border-radius: 8px;
+     color: white;
+     background-color: green;
+     font-size: 20px;
+     text-align: center;
+     line-height: 30px;
+}
+
+.slick-list{
+     width: 100%;
+     height: 350px;
+}
+
+.image-section{
+     position: relative;
+     width: 70%;
+     margin-left: 15%;
+     margin-top: 3%;
+}
+
+.image-section img{
+     width: 100%;
+     height: 450px;
+}
+
+.image-section .details{
+     width: 70%;
+     position: absolute;
+     top: 40%;
+     left: 3%;
+     color: white;
+     font-size: 20px;
+     font-weight: 600;
+}
+
+.image-section .details h1{
+     font-size: 35px;
+     font-weight: 700;
+}
+
+article{
+     margin-top: 5%;
+     width: 90%;
+     height: auto;
+     /* max-height: 160vh; */
+     margin-left: 5%;
+     /* overflow: hidden; */
+}
+
+.title{
+     width: 90%;
+     margin-left: 5%;
+     border-bottom: 5px solid rgb(9, 136, 136);
+     font-size: 30px;
+     font-weight: 800;
+     color: rgb(9, 136, 136);
+     text-shadow: 0px 9px 7px;
+}
+
+.sections{
+     width: 100%;
+     height: auto;
+     margin-top: 2%;
+     display: flex;
+     overflow: hidden;
+}
+
+.sections .card{
+     position: relative;
+     cursor: pointer;
+     margin-top: 1%;
+     float: left;
+     width: 250px !important;
+     height: 290px !important;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     box-shadow: -4px -4px 15px 0px;
+     margin-left: 5%;
+     border-radius: 8px;
+     margin-bottom: 5%;
+}
+
+.sections .card a{
+     display: flex;
+     outline: none;
+     height: 290px;
+     width: 100%;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     text-decoration: none;
+}
+
+.sections .card img{
+     width: 80%;
+     height: 200px;
+}
+
+.sections .card .card-name{
+     text-align: center;
+     font-size: 20px;
+     font-weight: 700;
+     color: rgb(0, 81, 255);
+}
+
+.sections .card .stars{
+     width: 70%;
+     margin-bottom: 2%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.sections .card .stars div{
+     width: 10%;
+     color: yellow;
+     margin-left: 10%;
+     font-weight: 800;
+}
+
+.sections .card .stars img{
+     width: 20px;
+     height: 20px;
+     fill: gray !important;
+}
+
+.sections .card .price{
+     width: 50%;
+     display: flex;
+     justify-content: space-between;
+     font-weight: 500;
+     color: rgb(0, 81, 255);
+     margin: 3% 0;
+}
+
+.sections .card .price span{
+     color: black;
+}
+
+.prev-btn, .next-btn{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     font-size: 20px;
+     outline: none  ;
+}
+
+.prev-btn{
+     left: 10%;
+}
+
+.control-btns{
+     width: 60%;
+     margin-left: 20%;
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+}
+
+.control-btns button{
+     border: none;
+     background-color: cyan;
+     color: white;
+     font-weight: 800;
+}
+
+.sections .card .edit-btn{
+     text-decoration: none;
+     width: 40px;
+     height: 40px;
+     position: absolute;
+     top: 0;
+     right: 0;
+     z-index: 1000;
+}
+
+.sections .card .edit-btn img{
+     width: 40px;
+     height: 40px;
+     opacity: 0.6;
+}
+
+@media only screen and (width <540px){
+     .sections{
+          width: 90%;
+          /* height: 290px; */
+          /* margin-left: 5%; */
+          margin-top: 2%;
+          /* display: flex; */
+          overflow: hidden;
+     }
+
+     .slick-list{
+          height: 330px;
+     }
+
+     .sections .card{
+          width: 200px !important;
+          height: 260px !important;
+          box-shadow: -4px -4px 5px 0px;
+          margin-bottom: 5%;
+     }
+
+     .sections .card img{
+          height: 150px;
+
+     }
+
+     .image-section{
+          width: 90%;
+          margin-left: 5%;
+          height: 200px;
+     }
+
+     .image-section img{
+          height: 200px;
+     }
+
+     .image-section .details{
+          top: 3%;
+     }
+
+     .image-section .details h1{
+          font-size: 20px;
+     }
+
+     .image-section .details div{
+          font-size: 13px;
+     }
+}

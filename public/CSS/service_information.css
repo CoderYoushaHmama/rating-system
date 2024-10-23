@@ -1,0 +1,472 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: system-ui;
+}
+
+body{
+     /* background-image: url(../IMAGES/background.jpg); */
+     background-size: cover;
+     background-attachment: fixed;
+     height: 90vh;
+}
+
+.success{
+     position: absolute;
+     padding: 1%;
+     top: 1%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 30%;
+     height: 30px;
+     border-radius: 8px;
+     color: white;
+     background-color: green;
+     font-size: 20px;
+     text-align: center;
+     line-height: 30px;
+}
+
+a .prev-btn{
+     position: absolute;
+     top: 1%;
+     left: 1%;
+     width: 50px;
+     height: 50px;
+     border: none;
+     background: none;
+     background-image: url(../SVG/back-square.svg);
+     background-size: cover;
+     cursor: pointer;
+}
+
+.service-image{
+     width: 40%;
+     height: 80%;
+     margin-left: 5%;
+     margin-top: 5%;
+     float: left;
+}
+
+.service-image .main-image-container{
+     width: 90%;
+     height: 100%;
+     border: 2px solid black;
+     float: right;
+}
+
+.service-image .main-image-container img{
+     width: 100%;
+     height: 100%;
+     animation-name: image-view;
+     animation-duration: 0.5s;
+}
+
+.service-image .images-container{
+     height: 100%;
+     overflow-y: scroll;
+     overflow-x: hidden;
+}
+
+.service-image .images-container::-webkit-scrollbar{
+     display: none;
+}
+
+.service-image .images-container img{
+     width: 100%;
+     height: 50px;
+     margin-top: 50%;
+     cursor: pointer;
+}
+
+.service-information{
+     float: left;
+     width: 35%;
+     height: 80%;
+     padding-top: 1%;
+     text-align: left;
+     margin-left: 10%;
+}
+
+.service-information h1{
+     margin-top: 10%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.service-information .buttons{
+     display: flex;
+     justify-content: space-between;
+}
+
+.service-information .buttons button{
+     width: 45%;
+     height: 50px;
+     margin: 5% 0 2% 0;
+     border: none;
+     color: white;
+     border-radius: 8px;
+     font-size: 15px;
+     font-weight: 500;
+     cursor: pointer;
+     transition: 0.5s;
+}
+
+.service-information .buttons .service-provider-information{
+     background-color: rebeccapurple;
+}
+
+.service-information .buttons .rating{
+     background-color: rgb(5, 59, 158);
+}
+
+.service-information .buttons .service-provider-information:hover{
+     background: none;
+     color: rebeccapurple;
+     border: 1px solid rebeccapurple;
+}
+
+.service-information .buttons .rating:hover{
+     background: none;
+     color: rgb(5, 59, 158);
+     border: 1px solid rebeccapurple;
+}
+
+.total-stars{
+     width: 30%;
+     margin-left: 30%;
+     margin-top: 3%;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.total-stars h2{
+     color: yellow;
+     font-size: 25px;
+     font-weight: 700;
+}
+
+.total-stars img{
+     width: 50px;
+     height: 50px;
+}
+
+.service-information .rates-section{
+     width: 100%;
+     max-height: 200px;
+     overflow-y: scroll;
+}
+
+.service-information .rates-section::-webkit-scrollbar{
+     display: none;
+}
+
+.service-information .rates-section .rate{
+     width: 100%;
+}
+
+.service-information .rates-section .rate .date{
+     color: rgb(49, 48, 48);
+     font-size: 15px;
+}
+
+.service-information .rates-section .rate .container{
+     display: flex;
+     height: 50px;
+     align-items: center;
+     position: relative;
+}
+
+.service-information .rates-section .rate .container .delete-btn{
+     position: absolute;
+     right: 0;
+}
+
+.service-information .rates-section .rate .container .delete-btn img{
+     width: 20px;
+     height: 20px;
+}
+
+.service-information .rates-section .rate .container .profile-image{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+}
+
+.service-information .rates-section .rate .container .username{
+     margin-left: 5%;
+     font-weight: 700;
+     width: 30%;
+}
+
+.service-information .rates-section .rate .container .stars{
+     display: flex;
+     justify-content: space-between;
+     position: absolute;
+     right: 5%;
+}
+
+.service-information .rates-section .rate .container .stars img{
+     width: 15px;
+     height: 15px;
+}
+
+.service-information .rates-section .rate .comment{
+     font-style: italic;
+}
+
+.service-information .rates-section hr{
+     margin: 3% 0;
+}
+
+.service-provider-information-section{
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     width: 60%;
+     height: 70%;
+     transform: translate(-50%,-50%);
+     background-color: black;
+     border-radius: 8px;
+     overflow: hidden;
+     animation-duration: 0.3s;
+}
+
+.service-provider-information-section .container{
+     position: relative;
+     width: 100%;
+     height: 100%;
+}
+
+.service-provider-information-section img{
+     width: 35%;
+     height: 60%;
+     float: left;
+     margin-top: 10%;
+     margin-left: 5%;
+     border-radius: 15px;
+}
+
+.service-provider-information-section .details{
+     float: left;
+     color: white;
+     width: 40%;
+     height: 50%;
+     margin-top: 13%;
+     margin-left: 5%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.service-provider-information-section .container .details div{
+     display: flex;
+     justify-content: space-between;
+     font-size: 20px;
+}
+
+.service-provider-information-section .container .close{
+     position: absolute;
+     top: -15%;
+     right: 2%;
+     width: 50px;
+     height: 50px;
+     cursor: pointer;
+}
+
+.background{
+     display: none;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(114, 108, 108, 0.432);
+}
+
+.rating-section{
+     display: none;
+     width: 40%;
+     height: 60%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     background-color: black;
+     border-radius: 10px;
+     overflow: hidden;
+     animation-duration: 0.3s;
+}
+
+.rating-section .stars{
+     width: 50%;
+     margin-left: 25%;
+     margin-top: 10%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.rating-section .stars img{
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+}
+
+.rating-section .inputs-container{
+     display: none;
+}
+
+.rating-section .close{
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 2%;
+     right: 2%;
+     cursor: pointer;
+}
+
+.rating-section form textarea{
+     width: 90%;
+     height: 130px;
+     background: none;
+     border: 1px solid white;
+     border-radius: 0 10px 10px 10px;
+     margin-left: 5%;
+     margin-top: 3%;
+     font-size: 20px;
+     color: white;
+}
+
+.rating-section form button{
+     width: 30%;
+     height: 40px;
+     margin-left: 35%;
+     margin-top: 3%;
+     border: none;
+     font-size: 20px;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: 0.5s;
+}
+
+.rating-section form button:hover{
+     color: white;
+     border: 1px solid white;
+     background: none;
+}
+
+@keyframes image-view {
+     from{
+          opacity: 0;
+     }
+     to{
+          opacity: 1;
+     }
+}
+
+@keyframes open-service-provide-details {
+     from{
+          width: 0;
+     }
+     to{
+          width: 60%;
+     }
+}
+
+@keyframes close-service-provide-details {
+     from{
+          width: 60%;
+     }
+     to{
+          width: 0;
+     }
+}
+
+@keyframes open-rating {
+     from{
+          width: 0;
+     }
+     to{
+          width: 40%;
+     }
+}
+
+@keyframes close-rating {
+     from{
+          width: 40%;
+     }
+     to{
+          width: 0;
+     }
+}
+
+@media only screen and (width <540px){
+     .total-stars{
+          width: 40%;
+          margin-left: 25%;
+     }
+     
+     .total-stars h2{
+          margin-left: 10%;
+     }
+     
+     .total-stars img{
+          width: 40px;
+          height: 40px;
+     }
+
+     .service-image{
+          width: 95%;
+          height: 90%;
+     }
+
+     .service-information{
+          width: 95%;
+          height: 80%;
+          margin-left: 5%;
+     }
+
+     .service-information h1{
+          font-size: 20px;
+     }
+
+     .service-information .rates-section .rate .container .username{
+          margin-left: 5%;
+          font-weight: 700;
+          width: 23%;
+     }
+
+     .service-information .rates-section .rate .container .stars{
+          right: 7%;
+     }
+
+     .service-information .rates-section{
+          height: 90%;
+     }
+
+     .service-provider-information-section{
+          width: 95%;
+          height: 30%;
+     }
+
+     .service-provider-information-section .container .details div{
+          display: flex;
+          justify-content: space-between;
+          font-size: 12px;
+     }
+
+     .rating-section{
+          width: 95%;
+          height: 50%;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          background-color: black;
+          border-radius: 10px;
+          overflow: hidden;
+          animation-duration: 0.3s;
+     }
+}

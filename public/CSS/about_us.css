@@ -1,0 +1,170 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: system-ui;
+}
+
+.success{
+     position: absolute;
+     padding: 1%;
+     top: 1%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 30%;
+     height: 30px;
+     border-radius: 8px;
+     color: white;
+     background-color: green;
+     font-size: 20px;
+     text-align: center;
+     line-height: 30px;
+}
+
+.stars-container{
+     width: 30%;
+     height: 70px;
+     margin-top: 2%;
+     margin-left: 35%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.stars-container img{
+     width: 80px;
+     height: 80px;
+     margin-top: 5%;
+     animation-duration: 0.5s;
+     animation-name: star-animation;
+     opacity: 0;
+}
+
+.stars-container .star{
+     margin-top: 0;
+}
+
+.stars-container .star2{
+     margin-top: 10%;
+}
+
+.stars-container #s1{
+     animation-delay: 0s;
+}
+
+.stars-container #s2{
+     animation-delay: 0.5s;
+}
+
+.stars-container #s3{
+     animation-delay: 1s;
+}
+
+.stars-container #s4{
+     animation-delay: 1.5s;
+}
+
+.stars-container #s5{
+     animation-delay: 2s;
+}
+
+.image-container{
+     width: 40%;
+     margin-left: 30%;
+     margin-top: 8%;
+}
+
+.image-container img{
+     width: 80%;
+     height: 300px;
+     border-radius: 10px;
+}
+
+.text-container{
+     width: 90%;
+     margin-left: 5%;
+     font-size: 20px;
+     margin-top: 2%;
+}
+
+.home-btn{
+     width: 10%;
+     height: 40px;
+     text-align: center;
+     line-height: 40px;
+     position: absolute;
+     top: 2%;
+     right: 2%;
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+     border: 1px solid cyan;
+     border-radius: 8px;
+     transition: 0.5s;
+}
+
+.home-btn:hover{
+     background-color: cyan;
+     border: none;
+}
+
+.edit-btn{
+     width: 10%;
+     height: 40px;
+     text-align: center;
+     line-height: 40px;
+     border: 1px solid black;
+     text-decoration: none;
+     color: black;
+     border-radius: 8px;
+     position: absolute;
+     top: 15%;
+     right: 5%;
+     font-size: 20px;
+     transition: 0.5s;
+}
+
+.edit-btn:hover{
+     background-color: black;
+     color: white;
+}
+
+@keyframes star-animation {
+     from{
+          opacity: 0;
+     }to{
+          opacity: 1;
+     }
+}
+
+@media only screen and (width <540px){
+     .stars-container{
+          width: 50%;
+          margin-left: 25%;
+          display: flex;
+          justify-content: center;
+     }
+
+     .stars-container img{
+          width: 50px;
+          height: 50px;
+     }
+
+     .image-container{
+          width: 90%;
+          margin-left: 5%;
+     }
+     
+     .text-container{
+          width: 90%;
+          height: 150px;
+          overflow-y: scroll;
+          margin-left: 5%;
+          font-size: 15px;
+          margin-top: 2%;
+     }
+
+     .edit-btn{
+          position: relative;
+          left: 2%;
+          padding: 2% 7%;
+     }
+}

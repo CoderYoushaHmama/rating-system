@@ -1,0 +1,274 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: system-ui;
+}
+
+.error{
+     display: none;
+     position: absolute;
+     padding: 1%;
+     top: 1%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 30%;
+     height: 30px;
+     border-radius: 8px;
+     color: white;
+     background-color: red;
+     font-size: 20px;
+     text-align: center;
+     line-height: 30px;
+}
+
+.title{
+     text-align: center;
+     margin-top: 2%;
+}
+
+form{
+     width: 40%;
+     float: right;
+     margin-right: 20%;
+     margin-top: 3%;
+}
+
+form .inputs-container{
+     width: 100%;
+}
+
+form .inputs-container div{
+     font-size: 20px;
+     font-weight: 700;
+     margin-top: 1%;
+}
+
+form .inputs-container textarea{
+     width: 100%;
+     height: 150px;
+     border-radius: 8px;
+     margin-top: 1%;
+     font-size: 20px;
+}
+
+form .inputs-container .image-input-container{
+     position: relative;
+     width: 60px;
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: pink;
+     border-radius: 50%;
+     margin-top: 5%;
+     float: left;
+}
+
+form .inputs-container .images-container{
+     max-width: 50%;
+     min-width: 50%;
+     height: 100px;
+     overflow-x: scroll;
+     float: right;
+     display: flex;
+}
+
+form .inputs-container .images-container::-webkit-scrollbar{
+     display: block;
+     background-color: white;
+     border-radius: 8px;
+     width: 15px;
+}
+
+form .inputs-container .images-container::-webkit-scrollbar-thumb{
+     background-color: cyan;
+     border-radius: 8px;
+}
+
+form .inputs-container .images-container img{
+     width: 70px;
+     height: 70px;
+     position: absolute;
+     bottom: 0;
+}
+
+form .inputs-container .images-container .image-wrapper{
+     position: relative;
+     width: 100px;
+     height: 80px;
+     padding: 0 20%;
+}
+
+form .inputs-container .image-input-container img{
+     width: 50px;
+     height: 50px;
+     margin-left: 2%;
+     float: left;
+}
+
+form .inputs-container .images-container .remove-btn{
+     position: absolute;
+     top: 1%;
+     left: 15%;
+     background-color: red;
+     border: none;
+     color: white;
+     outline: none;
+}
+
+form .inputs-container .image-input-container input{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     opacity: 0;
+}
+
+form .buttons-container{
+     width: 80%;
+     margin-right: 10%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+form .edit-btn{
+     margin-top: 5%;
+     width: 60%;
+     height: 40px;
+     margin-left: 20%;
+     cursor: pointer;
+     background-color: green;
+     color: white;
+     border: none;
+     border-radius: 8px;
+     font-size: 20px;
+     transition: 0.5s;
+}
+
+form .edit-btn:hover{
+     background: none;
+     border: 1px solid green;
+     color: green;
+}
+
+form .buttons-container a{
+     margin-top: 5%;
+     width: 30%;
+     height: 40px;
+     margin-left: 35%;
+     cursor: pointer;
+     background-color: red;
+     border: none;
+     border-radius: 8px;
+     font-size: 20px;
+     transition: 0.5s;
+     text-decoration: none;
+     color: white;
+     line-height: 40px;
+     text-align: center;
+}
+
+form .buttons-container a:hover{
+     border: 1px solid red;
+     background: none;
+     color: red;
+}
+
+.images-section{
+     width: 70px;
+     height: 400px;
+     float: right;
+     margin-right: 5%;
+     margin-top: 5%;
+     overflow-y: scroll;
+}
+
+.images-section::-webkit-scrollbar{
+     display: none;
+}
+
+.images-section .image-container{
+     width: 100%;
+     height: 80px;
+     position: relative;
+}
+
+.images-section .image-container img{
+     width: 100%;
+     height: 70px;
+}
+
+.images-section .image-container a{
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     top: 0;
+     right: 0;
+     cursor: pointer;
+}
+
+.images-section .image-container a img{
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     top: 0;
+     right: 0;
+}
+
+.back-btn{
+     position: absolute;
+     top: 1%;
+     left: 1%;
+     width: 50px;
+     height: 50px;
+}
+
+.back-btn img{
+     width: 100%;
+     height: 100%;
+}
+
+@media only screen and (width <540px){
+     body{
+          background-position: 80%;
+     }
+
+     form{
+          width: 60%;
+          margin-right: 5%;
+          /* float: right;
+          margin-left: 10%;
+          margin-top: 20%; */
+     }
+
+     form .buttons-container .create-btn, form .buttons-container a{
+          margin-top: 20%;
+          width: 80%;
+     }
+
+     form .inputs-container .images-container{
+          max-width: 70%;
+          min-width: 70%;
+     }
+
+     form .inputs-container .images-container .image-wrapper{
+          width: 100px;
+          height: 80px;
+          padding: 0 40%;
+     }
+
+     .images-section{
+          width: 50px;
+          height: 400px;
+     }
+
+     .images-section .image-container img{
+          margin-right: 10%;
+          margin-top: 20%;
+          width: 50px;
+          height: 50px;
+     }
+}

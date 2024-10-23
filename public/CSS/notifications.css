@@ -1,0 +1,218 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: system-ui;
+}
+
+.success{
+     position: absolute;
+     padding: 1%;
+     top: 1%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 30%;
+     height: 30px;
+     border-radius: 8px;
+     color: white;
+     background-color: green;
+     font-size: 20px;
+     text-align: center;
+     line-height: 30px;
+}
+
+.main-title{
+     width: 96%;
+     margin-left: 2%;
+     margin-top: 3%;
+     color: cyan;
+     border-bottom: 2px solid cyan;
+}
+
+table{
+     margin-left: 2%;
+     width: 96%;
+}
+
+table tr{
+     width: 100%;
+     min-height: 100px;
+     display: flex;
+     justify-content: space-between;
+     font-size: 20px;
+     box-shadow: 6px 9px 16px gray;
+}
+
+table tr:first-child{
+     border-bottom: 1px solid gray;
+     box-shadow: none;
+     font-size: 15px;
+     font-weight: 800;
+     padding: 1% 0;
+}
+
+table tr td{
+     width: 100%;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+table tr td img{
+     width: 50px;
+     height: 50px;
+}
+
+.background{
+     display: none;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(128, 128, 128, 0.555);
+}
+
+.delete-comment-section{
+     display: none;
+     width: 50%;
+     height: 60%;
+     border-radius: 8px;
+     background-color: black;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.delete-comment-section .header{
+     position: relative;
+     width: 100%;
+     height: 70px;
+     margin-top: 7%;
+     margin-left: 2%;
+     display: flex;
+     align-items: center;
+}
+
+.delete-comment-section .header .username{
+     color: white;
+     font-size: 20px;
+     margin-left: 5%;
+}
+
+.delete-comment-section .header .profile-image{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     border: 1px solid gray;
+}
+
+.delete-comment-section .header .stars-container{
+     height: 100%;
+     display: flex;
+     align-items: center;
+     position: absolute;
+     right: 5%;
+}
+
+.delete-comment-section .header .stars-container img{
+     width: 30px;
+     height: 30px;
+}
+
+.delete-comment-section .comment{
+     font-size: 18px;
+     color: white;
+     font-style: italic;
+     width: 90%;
+     height: 100px;
+     margin-left: 5%;
+     margin-top: 2%;
+     overflow-y: scroll;
+}
+
+.delete-comment-section .comment::-webkit-scrollbar{
+     display: none;
+}
+
+.delete-comment-section .buttons-container{
+     width: 60%;
+     margin-left: 20%;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 5%;
+}
+
+.delete-comment-section .buttons-container .btn{
+     width: 40%;
+     height: 50px;
+     border-radius: 8px;
+     border: none;
+     font-size: 20px;
+     line-height: 50px;
+     text-align: center;
+     text-decoration: none;
+     color: white;
+     transition: 0.5s;
+     cursor: pointer;
+}
+
+.delete-comment-section .buttons-container .cancel-btn{
+     background-color: green;
+}
+
+.delete-comment-section .buttons-container .cancel-btn:hover{
+     background: none;
+     border: 1px solid green;
+     color: green;
+}
+
+.delete-comment-section .buttons-container .delete-btn{
+     background-color: red;
+}
+
+.delete-comment-section .buttons-container .delete-btn:hover{
+     background: none;
+     border: 1px solid red;
+     color: red;
+}
+
+.delete-comment-section .close-btn{
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 2%;
+     right: 2%;
+     cursor: pointer;
+}
+
+table tr td .notification{
+     cursor: pointer;
+}
+
+@media only screen and (width <540px){
+     table tr{
+          font-size: 15px;
+     }
+
+     .delete-comment-section{
+          width: 90%;
+          height: 47%;
+          border-radius: 8px;
+          background-color: black;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+     }
+
+     .delete-comment-section .header{
+          position: relative;
+          width: 100%;
+          height: 70px;
+          margin-top: 15%;
+          margin-left: 2%;
+          display: flex;
+          align-items: center;
+     }
+}

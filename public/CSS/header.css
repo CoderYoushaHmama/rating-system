@@ -1,0 +1,171 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: system-ui;
+}
+
+header{
+     width: 100%;
+}
+
+header .top-section{
+     width: 90%;
+     margin-left: 5%;
+     margin-top: 2%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+header .header-title{
+     font-size: 20px;
+     width: 15%;
+}
+
+header .top-section .links-container{
+     width: 85%;
+     display: flex;
+     justify-content: space-between;
+     font-size: 15px;
+}
+
+header .top-section .links-container a{
+     padding: 2%;
+     text-decoration: none;
+     color: black;
+     font-weight: 700;
+     border-radius: 50px;
+     transition: 0.3s;
+}
+
+header .top-section .links-container a:hover{
+     background-color: gainsboro;
+}
+
+header .top-section .sign-in{
+     text-decoration: none;
+     color: white;
+     padding: 1%;
+     background-color: black;
+     border-radius: 50px;
+     transition: 0.3s;
+     font-weight: 800;
+}
+
+header .top-section .sign-in:hover{
+     background-color: gray;
+}
+
+header .search-title{
+     text-align: center;
+     margin-top: 3%;
+     font-size: 45px;
+     font-weight: 800;
+}
+
+header .search-types{
+     cursor: pointer;
+     width: 50%;
+     margin-left: 25%;
+     margin-top: 2%;
+     display: flex;
+     justify-content: space-between;
+}
+
+header .search-types .type-container{
+     width: 18%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     font-size: 15px;
+     padding-bottom: 1%;
+     /* border-bottom: 3px solid black; */
+}
+
+header .search-types .type-container:first-child{
+     border-bottom: 3px solid black;
+}
+
+header .search-types .type-container img{
+     width: 25px;
+     height: 25px;
+}
+
+header form{
+     position: relative;
+     width: 50%;
+     margin-left: 25%;
+     margin-top: 3%;
+     height: 60px;
+}
+
+header form input{
+     width: 100%;
+     height: 100%;
+     border-radius: 50px;
+     font-size: 20px;
+     text-indent: 2%;
+     border: none;
+     outline: none;
+     box-shadow: 0px 0px 7px;
+}
+
+header form button{
+     position: absolute;
+     right: 1%;
+     top: 5%;
+     width: 15%;
+     height: 90%;
+     background-color: cyan;
+     border-radius: 50px;
+     border: none;
+     font-size: 20px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: 0.3s;
+}
+
+header form button:hover{
+     background-color: rgba(0, 255, 255, 0.377);
+}
+
+header .top-section .profile img{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     border: 1px solid gray;
+}
+
+@media only screen and (width <540px){
+     header .header-title{
+          font-size: 20px;
+          margin-left: 15%;
+     }
+
+     header .top-section .links-container{
+          display: none;
+     }
+
+     header .search-title{
+          font-size: 30px;
+     }
+
+     header .search-types{
+          width: 90%;
+          margin-left: 5%;
+     }
+
+     header .search-types .type-container{
+          width: 30%;
+          font-size: 15px;
+     }
+
+     header form{
+          width: 90%;
+          margin-left: 5%;
+     }
+
+     header form button{
+          width: 30%;
+     }
+}

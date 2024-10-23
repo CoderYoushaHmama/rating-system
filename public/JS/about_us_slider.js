@@ -1,0 +1,9 @@
+$(document).ready(function(){
+     $('#image-container').slick({
+         autoplay:true,
+         slidesToShow:1,
+         slidesToScroll:1,
+         prevArrow:"#prev-btn",
+         nextArrow:"#next-btn",
+     });
+ });

@@ -1,0 +1,210 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: system-ui;
+}
+
+.error{
+     position: absolute;
+     padding: 1%;
+     top: 1%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 30%;
+     height: 30px;
+     border-radius: 8px;
+     color: white;
+     background-color: red;
+     font-size: 20px;
+     text-align: center;
+     line-height: 30px;
+}
+
+.title{
+     text-align: center;
+     margin-top: 2%;
+}
+
+form{
+     width: 40%;
+     margin-left: 30%;
+     margin-top: 3%;
+     background-color: whitesmoke;
+     border-radius: 8px;
+     box-shadow: 0px 1px 10px;
+}
+
+form .inputs-container div{
+     font-size: 20px;
+     font-weight: 700;
+     margin-top: 1%;
+     margin-left: 15%;
+}
+
+form .inputs-container input, form .inputs-container select{
+     width: 70%;
+     margin-left: 15%;
+     height: 40px;
+     border-radius: 8px;
+     border: none;
+     margin-top: 1%;
+     font-size: 20px;
+     background-color: gainsboro;
+}
+
+form .inputs-container .image-input-container{
+     position: relative;
+     width: 60px;
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: pink;
+     border-radius: 50%;
+     margin-top: 5%;
+     float: left;
+}
+
+form .inputs-container .images-container{
+     position: relative;
+     max-width: 50%;
+     min-width: 50%;
+     height: 100px;
+     overflow-x: scroll;
+     float: right;
+     margin-top: 5%;
+     display: flex;
+}
+
+form .inputs-container .images-container::-webkit-scrollbar{
+     display: block;
+     background-color: white;
+     border-radius: 8px;
+     width: 15px;
+}
+
+form .inputs-container .images-container::-webkit-scrollbar-thumb{
+     background-color: cyan;
+     border-radius: 8px;
+}
+
+.image-separator{
+     padding: 50px;
+}
+
+form .inputs-container .images-container img{
+     width: 70px;
+     height: 70px;
+     position: absolute;
+}
+
+form .inputs-container .images-container .image-wrapper{
+     position: relative;
+     width: 100px !important;
+     height: 50px;
+}
+
+form .inputs-container .image-input-container img{
+     position: absolute;
+     width: 50px;
+     height: 50px;
+}
+
+form .inputs-container .images-container .remove-btn{
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     background-color: red;
+     border: none;
+     color: white;
+     outline: none;
+}
+
+form .inputs-container .image-input-container input{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     opacity: 0;
+}
+
+form .create-btn{
+     margin-top: 5%;
+     width: 30%;
+     height: 40px;
+     margin-left: 35%;
+     cursor: pointer;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 8px;
+     font-size: 20px;
+     transition: 0.5s;
+}
+
+form .create-btn:hover{
+     background-color: black;
+     color: white;
+}
+
+.back-btn{
+     position: absolute;
+     top: 1%;
+     left: 1%;
+     width: 50px;
+     height: 50px;
+}
+
+.back-btn img{
+     width: 100%;
+     height: 100%;
+}
+
+@media only screen and (width <540px){
+     body{
+          /* background-position: 80%; */
+     }
+
+     form{
+          width: 90%;
+          float: none;
+          margin-left: 5%;
+          margin-top: 20%;
+     }
+
+     form .inputs-container div{
+          margin-left: 5%;
+     }
+
+     form .inputs-container input, form .inputs-container select{
+          width: 90%;
+          margin-left: 5%;
+     }
+
+     form .create-btn{
+          margin-top: 5%;
+          margin-bottom: 5%;
+          width: 70%;
+          margin-left: 15%;
+     }
+
+     form .inputs-container .images-container{
+          max-width: 70%;
+          min-width: 70%;
+     }
+
+     form .inputs-container .images-container .image-wrapper{
+          width: 100px;
+          height: 80px;
+     }
+
+     /* form .inputs-container .images-container .remove-btn{
+          position: absolute;
+          top: 1%;
+          left: 25%;
+          background-color: red;
+          border: none;
+          color: white;
+          outline: none;
+     } */
+}

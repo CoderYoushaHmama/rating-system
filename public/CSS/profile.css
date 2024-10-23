@@ -1,0 +1,229 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: system-ui;
+}
+
+body{
+     height: 100vh;
+}
+
+.error{
+     position: absolute;
+     padding: 1%;
+     top: 1%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 30%;
+     height: 30px;
+     border-radius: 8px;
+     color: white;
+     background-color: red;
+     font-size: 20px;
+     text-align: center;
+     line-height: 30px;
+}
+
+.success{
+     position: absolute;
+     padding: 1%;
+     top: 1%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 30%;
+     height: 30px;
+     border-radius: 8px;
+     color: white;
+     background-color: green;
+     font-size: 20px;
+     text-align: center;
+     line-height: 30px;
+     z-index: 1000;
+}
+
+.profile-section{
+     position: relative;
+     width: 70%;
+     /* height: 500px; */
+     margin-left: 15%;
+     margin-top: 3%;
+     border-radius: 15px;
+     background-color: white;
+     box-shadow: -2px 3px 20px 4px gray;
+}
+
+.profile-section .title{
+     padding: 1% 3%;
+}
+
+.profile-section .register-date{
+     color: gray;
+     margin-left: 3%;
+}
+
+.profile-section .separator{
+     width: 90%;
+     height: 100px;
+     margin: 5% 5%;
+     background-image: linear-gradient(to right, rgb(109, 216, 219), antiquewhite 50%);
+     border-radius: 10px 10px 0 0;
+}
+
+.profile-section form{
+     position: relative;
+     width: 90%;
+     height: 50%;
+     margin-left: 5%;
+}
+
+.profile-section form .header{
+     width: 100%;
+     height: 20%;
+}
+
+.profile-section form .header .image-container{
+     float: left;
+     margin-right: 5%;
+}
+
+.profile-section form .header img{
+     width: 60px;
+     height: 60px;
+     border: 1px solid gray;
+     border-radius: 50%;
+}
+
+.profile-section form .header .username{
+     font-size: 20px;
+     font-weight: 700;
+}
+
+.profile-section form .header .email{
+     margin-top: 0.5%;
+     color: gray;
+     font-size: 15px;
+}
+
+.profile-section form .header .image-container{
+     width: 60px;
+     height: 60px;
+     position: relative;
+}
+
+.profile-section form .header .image-container input{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     position: absolute;
+     top: 0;
+     opacity: 0;
+}
+
+.profile-section form .inputs-container{
+     width: 90%;
+     margin-left: 5%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.profile-section form .inputs-container .container{
+     width: 50%;
+}
+
+.profile-section form .inputs-container .container input, .profile-section form .inputs-container .container select{
+     width: 90%;
+     height: 35px;
+     background-color: rgba(211, 211, 211, 0.445);
+     border: none;
+     border-radius: 8px;
+     font-size: 20px;
+     outline: none;
+     text-indent: 2%;
+}
+
+.profile-section form .inputs-container .container div{
+     font-size: 20px;
+     margin: 2% 0;
+}
+
+.profile-section form .email-container{
+     width: 100%;
+     margin-left: 2%;
+}
+
+.profile-section form .email-container .title{
+     font-size: 18px;
+     font-weight: 800;
+}
+
+.profile-section form .email-container .container{
+     display: flex;
+     align-items: center;
+     margin-left: 3%;
+}
+
+.profile-section form .email-container .container img{
+     width: 30px;
+     height: 30px;
+}
+
+.profile-section form .email-container .container span{
+     margin-left: 2%;
+}
+
+.profile-section form button{
+     background-color: rgb(0, 81, 255);
+     width: 8%;
+     height: 30px;
+     border: none;
+     border-radius: 5px;
+     color: white;
+     position: absolute;
+     top: 3%;
+     right: 0;
+     cursor: pointer;
+}
+
+.reset-password{
+     text-decoration: none;
+     position: absolute;
+     bottom: 3%;
+     right: 5%;
+}
+
+@media only screen and (width <540px){
+     .profile{
+          display: none;
+     }
+
+     header .header-title{
+          display: none;
+     }
+
+     .profile-section{
+          width: 80%;
+          margin-left: 15%;
+     }
+
+     .profile-section form .inputs-container{
+          display: block;
+     }
+
+     .profile-section form .inputs-container .container{
+          width: 100%;
+     }
+
+     .profile-section form .inputs-container .container input, .profile-section form .inputs-container .container select{
+          width: 100%;
+     }
+
+     .profile-section form button{
+          background-color: rgb(0, 81, 255);
+          width: 20%;
+     }
+
+     .reset-password{
+          bottom: 0%;
+     }
+}
