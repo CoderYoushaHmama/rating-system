@@ -54,7 +54,7 @@
                </div>
                <a href="{{url('/')}}" class="profile">
                     @if ($user->image)
-                         <img src="{{$user->image}}" alt="error" />
+                         <img src="{{url('/')}}/{{$user->image}}" alt="error" />
                          @else
                          <img src="{{asset('IMAGES/user.jpg')}}" alt="error" />
                     @endif

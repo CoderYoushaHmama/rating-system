@@ -4,13 +4,6 @@
      font-family: system-ui;
 }
 
-body{
-     /* background-image: url(../IMAGES/services-background.jpg);
-     background-size: cover;
-     background-attachment: fixed;
-     background-blend-mode: soft-light; */
-}
-
 .title{
      text-align: center;
      margin-top: 2%;
@@ -228,10 +221,6 @@ form .buttons-container a:hover{
 }
 
 @media only screen and (width <540px){
-     body{
-          /* background-position: 80%; */
-     }
-
      form{
           width: 50%;
           float: right;
@@ -271,5 +260,10 @@ form .buttons-container a:hover{
      form .inputs-container .images-container .image-wrapper{
           width: 100px;
           height: 80px;
+     }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
      }
 }

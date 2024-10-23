@@ -7,7 +7,6 @@
      <link rel="stylesheet" href="{{asset('CSS/regular_user_home.css')}}" />
      <link rel="stylesheet" href="{{asset('CSS/header.css')}}" />
      <link rel="stylesheet" href="{{asset('CSS/sidebar.css')}}" />
-     {{-- <link rel="stylesheet" href="{{asset('CSS/slick.css')}}" /> --}}
      <title>Home</title>
 </head>
 

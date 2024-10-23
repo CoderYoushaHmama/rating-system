@@ -161,10 +161,6 @@ form .create-btn:hover{
 }
 
 @media only screen and (width <540px){
-     body{
-          /* background-position: 80%; */
-     }
-
      form{
           width: 90%;
           float: none;
@@ -198,13 +194,8 @@ form .create-btn:hover{
           height: 80px;
      }
 
-     /* form .inputs-container .images-container .remove-btn{
-          position: absolute;
-          top: 1%;
-          left: 25%;
-          background-color: red;
-          border: none;
-          color: white;
-          outline: none;
-     } */
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
+     }
 }

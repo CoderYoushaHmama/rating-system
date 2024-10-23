@@ -239,9 +239,6 @@ form .buttons-container a:hover{
      form{
           width: 60%;
           margin-right: 5%;
-          /* float: right;
-          margin-left: 10%;
-          margin-top: 20%; */
      }
 
      form .buttons-container .create-btn, form .buttons-container a{
@@ -270,5 +267,10 @@ form .buttons-container a:hover{
           margin-top: 20%;
           width: 50px;
           height: 50px;
+     }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
      }
 }

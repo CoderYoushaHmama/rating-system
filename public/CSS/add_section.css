@@ -152,4 +152,9 @@ form .buttons-container .btn:hover{
           transition: 0.5s;
           background-color: blue;
      }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
+     }
 }

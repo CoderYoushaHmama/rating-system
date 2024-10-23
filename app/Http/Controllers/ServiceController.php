@@ -51,6 +51,7 @@ class ServiceController extends Controller
     public function getSectionServicesPage(Section $section, Request $request)
     {
         $user = Auth::guard('user')->user();
+        $service_merge = [];
         if ($section->user_id != $user->id && $user->account_type == 'service provider') {
             return redirect()->back();
         }

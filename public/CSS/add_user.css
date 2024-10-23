@@ -193,4 +193,9 @@ body{
           background-color: rgb(0, 81, 255);
           width: 20%;
      }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
+     }
 }

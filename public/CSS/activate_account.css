@@ -31,7 +31,6 @@ body{
 }
 
 form{
-     /* position: relative; */
      width: 45%;
      height: 50%;
      padding-top: 15%;
@@ -74,10 +73,6 @@ form button:hover{
      border: 1px solid rgb(0, 38, 255);
 }
 
-form .form-1{
-     /* display: none; */
-}
-
 form .form-2 h1{
      padding-bottom: 3%;
 }
@@ -106,5 +101,10 @@ form .form-2 h1{
           position: relative;
           margin-top: 30%;
           width: 20%;
+     }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
      }
 }

@@ -130,4 +130,9 @@ form .buttons-container a:hover{
      form button , form .buttons-container a{
           width: 80%;
      }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
+     }
 }

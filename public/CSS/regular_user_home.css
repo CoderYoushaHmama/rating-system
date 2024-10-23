@@ -44,9 +44,7 @@ article{
      margin-top: 5%;
      width: 90%;
      height: auto;
-     /* max-height: 160vh; */
      margin-left: 5%;
-     /* overflow: hidden; */
 }
 
 .title{
@@ -186,10 +184,7 @@ article{
 @media only screen and (width <540px){
      .sections{
           width: 90%;
-          /* height: 290px; */
-          /* margin-left: 5%; */
           margin-top: 2%;
-          /* display: flex; */
           overflow: hidden;
      }
 
@@ -229,5 +224,10 @@ article{
 
      .image-section .details div{
           font-size: 13px;
+     }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
      }
 }

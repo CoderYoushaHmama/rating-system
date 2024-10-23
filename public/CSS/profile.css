@@ -44,7 +44,6 @@ body{
 .profile-section{
      position: relative;
      width: 70%;
-     /* height: 500px; */
      margin-left: 15%;
      margin-top: 3%;
      border-radius: 15px;
@@ -197,6 +196,11 @@ body{
           display: none;
      }
 
+     .profile-section form .email-container .container span{
+          width: 80%;
+          overflow-x: scroll;
+     }
+
      header .header-title{
           display: none;
      }
@@ -206,8 +210,15 @@ body{
           margin-left: 15%;
      }
 
+     .reset-password{
+          text-decoration: none;
+          position: relative;
+          margin-left: 15%;
+     }
+
      .profile-section form .inputs-container{
           display: block;
+          margin-top: 15%;
      }
 
      .profile-section form .inputs-container .container{
@@ -225,5 +236,10 @@ body{
 
      .reset-password{
           bottom: 0%;
+     }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
      }
 }

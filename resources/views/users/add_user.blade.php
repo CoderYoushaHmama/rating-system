@@ -86,7 +86,7 @@
                <button type="submit">Add</button>
           </form>
      </section>
-     <a href="#" class="back-btn">
+     <a href="{{url('/users')}}" class="back-btn">
           <img src="{{asset('SVG/back-square.svg')}}" />
      </a>
 

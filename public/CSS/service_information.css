@@ -5,9 +5,6 @@
 }
 
 body{
-     /* background-image: url(../IMAGES/background.jpg); */
-     background-size: cover;
-     background-attachment: fixed;
      height: 90vh;
 }
 
@@ -468,5 +465,10 @@ a .prev-btn{
           border-radius: 10px;
           overflow: hidden;
           animation-duration: 0.3s;
+     }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
      }
 }

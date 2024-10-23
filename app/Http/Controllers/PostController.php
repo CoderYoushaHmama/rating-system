@@ -16,9 +16,9 @@ class PostController extends Controller
     {
         $user = Auth::guard('user')->user();
         if ($request->filter == 'yours') {
-            $posts = $user->posts()->orderBy('created_at', 'asc')->get();
+            $posts = $user->posts()->orderBy('created_at', 'desc')->get();
         } else {
-            $posts = Post::orderBy('created_at', 'asc')->get();
+            $posts = Post::orderBy('created_at', 'desc')->get();
         }
 
         return view('posts.posts', compact('user', 'posts'));

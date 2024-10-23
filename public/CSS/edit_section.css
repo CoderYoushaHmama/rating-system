@@ -156,4 +156,9 @@ form .buttons-container .delete-btn:hover{
      form .buttons-container .btn{
           width: 100%;
      }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
+     }
 }

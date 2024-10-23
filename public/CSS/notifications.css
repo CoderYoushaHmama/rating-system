@@ -191,8 +191,15 @@ table tr td .notification{
 }
 
 @media only screen and (width <540px){
+     table{
+          display: block;
+          width: 100%;
+          overflow-x: scroll;
+     }
+
      table tr{
           font-size: 15px;
+          width: 700px;
      }
 
      .delete-comment-section{
@@ -214,5 +221,10 @@ table tr td .notification{
           margin-left: 2%;
           display: flex;
           align-items: center;
+     }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
      }
 }

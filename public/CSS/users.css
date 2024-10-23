@@ -194,4 +194,9 @@ body{
           height: 40px;
           line-height: 40px;
      }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
+     }
 }

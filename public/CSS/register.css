@@ -161,4 +161,9 @@
           height: 90px;
           margin-right: 2%;
      }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
+     }
 }

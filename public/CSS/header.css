@@ -79,7 +79,6 @@ header .search-types .type-container{
      justify-content: space-between;
      font-size: 15px;
      padding-bottom: 1%;
-     /* border-bottom: 3px solid black; */
 }
 
 header .search-types .type-container:first-child{
@@ -140,6 +139,7 @@ header .top-section .profile img{
      header .header-title{
           font-size: 20px;
           margin-left: 15%;
+          width: 40%;
      }
 
      header .top-section .links-container{

@@ -112,4 +112,9 @@
           margin-left: 5%;
           margin-top: 3%;
      }
+
+     .error, .success{
+          width: 70%;
+          font-size: 15px;
+     }
 }

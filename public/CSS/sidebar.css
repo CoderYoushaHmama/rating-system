@@ -40,7 +40,6 @@
      height: 10%;
      width: 90%;
      margin-left: 5%;
-     /* color: blue; */
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -65,7 +64,6 @@
      width: 90%;
      margin-left: 5%;
      text-decoration: none;
-     /* border-right: 10px solid blue; */
      border-radius: 50px;
 }
 
